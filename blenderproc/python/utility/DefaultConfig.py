@@ -26,7 +26,7 @@ class DefaultConfig:
     file_format = "PNG"
     color_depth = 8
     enable_transparency = False
-    jpg_quality = 95
+    jpg_quality = 100
     samples = 1024
     sampling_noise_threshold = 0.01
     cpu_threads = 1

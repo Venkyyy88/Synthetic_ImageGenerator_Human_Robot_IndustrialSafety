@@ -34,7 +34,6 @@ class CollisionUtility:
                                                      `objects_to_check_against`. Type: :class:`list`
         :return: Type: :class:`bool`, True if no collision was found, false if at least one collision was found
         """
-
         no_collision = True
         # Now check for collisions
         for collision_obj in objects_to_check_against:

@@ -1,0 +1,60 @@
+scene_path: resources/Dataset/scene.blend   # Path to the .blend file containing the scene setup.
+panda_path: resources/Dataset/panda.blend  # Path to the .blend file with the Panda robot model.
+worker_path: resources/Dataset/worker.blend # Path to the .blend file with the worker model.
+output_dir: output/test_final # Directory where the rendered images and other output files will be saved.
+num_images: 1  # Number of images to generate/render.
+camera_lens: 32  # Focal length of the camera lens used for rendering, in millimeters.
+light_energy: 1000  # Energy level of the light source in the scene, measured in Watts.
+light_type: AREA  # Type of light source used in the scene, e.g., POINT, SUN, SPOT, AREA.
+safety_zone_radius: 0.4  # Radius of the safety zone sphere in meters.
+safetyzone: true  # Boolean indicating whether to include a visual safety zone in the renders.
+hdf5: true  # Boolean indicating whether to save the rendered images and annotations in an HDF5 file.
+img_width: 720 # Width of the generated images 
+img_height: 720 # Height of the generated images
+bg_color_rgb: [0.03, 0.03, 0.03] # Blender Color Space values for the background color (Blender Space ---> RGB values normalized into 1 (RGB value / 255)
+
+bones_to_randomize:  # Parameters for randomizing the robot arm poses (Values are in radians adapted from Franka Emika Datasheet).
+  Axis-1: [-2.9, 2.9]
+  Axis-2: [-1.76, 1.76]
+  Axis-3: [-2.9, 2.9]
+  Axis-4: [-3.07, 3.07]
+  Axis-5: [-0.017, 0.017]
+  Axis-6: [-3.82, 3.82]
+  Axis-7: [-3.14159, 3.14159]
+  Gripper-Right: [-0.785, 0.785]
+  Gripper-Left: [-0.785, 0.785]
+
+bones_to_randomize_worker:  # bones for randomizing the worker poses.
+  - mixamorig:RightArm
+  - mixamorig:LeftArm
+  - mixamorig:RightForeArm
+  - mixamorig:LeftForeArm
+
+category_ids: # category ids for objects in the scene default, id:0 background
+  Gripper: 1
+  drillbit: 1
+  weldingbit: 1
+#  Hand: 1
+#  Link-0: 1
+#  Link-1: 1
+#  Link-2: 1
+#  Link-3: 1
+#  Link-4: 1
+#  Link-5: 1
+#  Link-6: 1
+#  Link-7: 1
+  Panda: 1
+  Armature: 2
+#  Ch17_BodypolySurface2: 2
+#  Ch17_BodypolySurface3: 2
+#  Ch17_Boots: 2
+#  Ch17_Helmet: 2
+#  Ch17_Shirt1: 2
+#  Ch17_Vest: 2
+#  Finger-Left: 2
+#  Finger-Right: 2
+#  polySurface1Ch17_Body: 2
+  Table: 3         
+  workpiece: 4         
+  SafetyZone: 5    
+  Gloves : 2

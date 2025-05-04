@@ -6,6 +6,7 @@ import re
 import numpy as np
 
 from blenderproc.python.types.StructUtility import Struct
+from blenderproc.python.types.MeshObjectUtility import MeshObject
 
 
 def all_with_type(elements: List[Struct], filtered_data_type: Type[Struct] = None) -> List[Struct]:

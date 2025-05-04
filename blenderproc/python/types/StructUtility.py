@@ -131,3 +131,9 @@ class Struct:
             raise RuntimeError("The API class does not allow setting any attribute. Use the corresponding method or "
                                "directly access the blender attribute via entity.blender_obj.attribute_name")
         object.__setattr__(self, key, value)
+
+    def set_location(self, param):
+        pass
+
+    def set_rotation_euler(self, param):
+        pass
