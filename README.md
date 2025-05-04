@@ -131,11 +131,11 @@ Below is a quick glance at what a single frame looks like after post‑processin
 
 <p align="center">
   <!-- RGB -->
-  <img src="docs/images/rgb_sample.png" alt="RGB frame"   width="30%" />
+  <img src="docs/rgb_sample.png" alt="RGB frame"   width="30%" />
   <!-- segmentation -->
-  <img src="docs/images/segmap_sample.png" alt="Segmentation mask" width="30%" />
+  <img src="docs/segmap_sample.png" alt="Segmentation mask" width="30%" />
   <!-- bounding‑boxes -->
-  <img src="docs/images/bbox_sample.png" alt="Bounding‑box overlay" width="30%" />
+  <img src="docs/bbox_sample.png" alt="Bounding‑box overlay" width="30%" />
 </p>
 
 *Left → Right:* **RGB**, **Segmentation**, **Bounding Boxes**
